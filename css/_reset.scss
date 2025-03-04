@@ -1,0 +1,40 @@
+:root{
+    --primary-color:#c64132;
+    --secondary-color:#33c7ad;
+    --title-color:#ddd9da;
+    --white-color:#fff;
+    --black-color:#111;
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    line-height:1;
+    font-family: "Space Grotesk", "Noto Sans KR", serif;;
+    font-size:16px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    box-sizing: border-box;
+    color:var(--secondary-color);
+    cursor: default;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    color:var(--secondary-color);
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+    display: block;
+}
+
+.max-container{
+    padding:0 4%;
+    margin:0 auto;
+}
