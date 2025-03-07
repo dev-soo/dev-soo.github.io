@@ -5,13 +5,13 @@ window.onload = function(){
         gsap.timeline({
             scrollTrigger:{
                 trigger:selector,
-                start:'0% 10%',
+                start:'0% 100%',
                 end:'0% 0%',
                 scrub:1,
                 markers:true
             }
         })
-        .to(selector, {transform:'rotateX(-3deg) scale(0.9)',transformOrigin:'top', filter:'brightness(0.3)'},0)
+        .to(selector, {transform:'rotateX(0) scale(1)',transformOrigin:'top', filter:'brightness(1)'},0)
     })
 
     gsap.timeline({
