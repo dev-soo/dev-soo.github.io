@@ -32,6 +32,8 @@ a{
 img{
     vertical-align: middle;
     display: block;
+    max-width: 100%;
+    width: 100%;
 }
 
 .max-container{
@@ -46,3 +48,16 @@ img{
     clip:rect(0,0,0,0);
     margin:-1px;
 }
+
+/* margin */
+// .mt{
+//     &10{
+//         margin-top:10%;
+//     }
+//     &17{
+//         margin-top:17%;
+//     }
+//     &20{
+//         margin-top:20%;
+//     }
+// }

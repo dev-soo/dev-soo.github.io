@@ -34,6 +34,8 @@ a {
 img {
   vertical-align: middle;
   display: block;
+  max-width: 100%;
+  width: 100%;
 }
 
 .max-container {
@@ -50,127 +52,19 @@ img {
   margin: -1px;
 }
 
-main {
-  position: relative;
-  background-color: #111;
-}
-main.on {
-  overflow: hidden;
+/* margin */
+body {
+  background: #F4F1E9;
 }
 
-.main {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.main__content {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  z-index: 2;
-}
-.main__title {
-  text-align: center;
-  font-family: "Montaga", serif;
-  font-weight: 400;
-  font-size: 10rem;
-  font-style: italic;
-  color: var(--white-color);
-}
-.main__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.main__bg .bg-wrap {
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-.main__bg .bg-wrap video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.lastest {
-  position: relative;
-}
-.lastest h2 {
-  font-size: 10rem;
-  font-weight: 500;
-  text-align: center;
-  padding: 10% 0;
-}
 .lastest__list {
-  -webkit-perspective: 900px;
-          perspective: 900px;
-}
-.lastest__item {
-  width: 100%;
-  background-color: #fff;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  padding: 0 50px;
-  padding-top: 28%;
-  position: sticky;
-  top: 100px;
-  -webkit-filter: brightness(0.3);
-          filter: brightness(0.3);
-  -webkit-transform: rotateX(-2deg) scale(0.9);
-          transform: rotateX(-2deg) scale(0.9);
-  -webkit-transform-origin: top;
-          transform-origin: top;
-}
-
-.test {
-  height: 70vh;
-  background-color: yellow;
-}
-
-.wrap {
-  position: relative;
+  width: 70%;
   margin: 0 auto;
-  background: #111;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.wrap.on {
-  overflow: hidden;
-}
-
-.con01 {
-  padding: 500px 0 1000px;
-}
-.con01 .inner {
-  padding: 0 50px;
-  color: #fff;
-}
-.con01 .listBox {
-  -webkit-perspective: 900px;
-          perspective: 900px;
-}
-.con01 .listBox .box {
-  background-color: #fff;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  padding: 30px 50px 0;
-  height: 800px;
-  position: sticky;
-  top: 100px;
-  -webkit-filter: brightness(1);
-          filter: brightness(1);
+.lastest__img {
+  background-color: gold;
+  width: 80%;
+  margin: 0 auto;
 }
