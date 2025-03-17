@@ -3,12 +3,12 @@ window.onload = function(){
 
     gsap.utils.toArray(".masked-image").forEach(item=>{
         gsap.to(item,{
-            yPercent:-100,
+            yPercent:-20,
             ease:'none',
             duration:0.5,
             scrollTrigger:{
                 trigger:item,
-                start:'bottom bottom',
+                start:'top bottom',
                 end:'bottom top',
                 scrub:0.5
             }

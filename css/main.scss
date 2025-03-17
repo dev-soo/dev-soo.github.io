@@ -12,10 +12,18 @@ body{
         grid-template-columns: repeat(2,1fr);
     }
     &__item{
+        &:nth-child(even){
+            margin-left:50px;
+            margin-top:20%;
+        }
     }
     &__img{
         background-color: gold;
-        width:80%;
+        height:600px;
         margin:0 auto;
+
+        img{
+            height:120%;
+        }
     }
 }

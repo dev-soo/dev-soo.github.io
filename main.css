@@ -53,6 +53,16 @@ img {
 }
 
 /* margin */
+.mt10 {
+  margin-top: 10%;
+}
+.mt17 {
+  margin-top: 17%;
+}
+.mt20 {
+  margin-top: 20%;
+}
+
 body {
   background: #F4F1E9;
 }
@@ -63,8 +73,15 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.lastest__item:nth-child(even) {
+  margin-left: 50px;
+  margin-top: 20%;
+}
 .lastest__img {
   background-color: gold;
-  width: 80%;
+  height: 600px;
   margin: 0 auto;
+}
+.lastest__img img {
+  height: 120%;
 }
